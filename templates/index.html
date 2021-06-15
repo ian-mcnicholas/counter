@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <div>
+        <h2>Counter</h2>
+        <h2>{{counter}} visits</h2>
+    </div>
+
+    <div>
+            <form method="post" action="/plus2">
+                <!-- <button type="submit" value="Add +2" name="plus2"/> -->
+                <button type="submit" action="plus2">Add +2</button>
+                <!-- <input type="submit" value="Reset" name="reset" /> -->
+            </form>
+    </div>
+
+    <div>
+        <form method="post" action="/reset">
+            <!-- <button type="submit" value="Add +2" name="plus2"/> -->
+            <button type="submit" action="reset">Reset</button>
+            <!-- <input type="submit" value="Reset" name="reset" /> -->
+        </form>
+    </div>
+</body>
+</html>
